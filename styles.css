@@ -1,0 +1,559 @@
+/* Resetarea marginilor și paddingului */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stiluri pentru body */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(
+    to right,
+    #ffe1e1,
+    #ffd2d2,
+    #ffc3c3,
+    #ffb7b7,
+    #ff9d9d
+  );
+}
+
+/* Meniul de navigație */
+.navbar {
+  background-color: #f67070;
+  padding: 2px 0;
+}
+
+.navbar-nav .nav-link {
+  padding: 5px 15px;
+}
+
+.custom-navbar {
+  background-color: #d85d5d;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 0.875rem;
+}
+
+.navbar .navbar-brand {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #fff;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #fc7d7d;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+/* Logo ASCII */
+.navbar .navbar-brand pre {
+  font-family: monospace;
+  color: #fff;
+  font-size: 18px;
+}
+
+.logo-ascii {
+  padding: 10px 20px;
+  font-family: monospace;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  white-space: pre;
+  padding-top: 30px;
+}
+
+.logo-ascii pre {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Carusel */
+.carousel {
+  margin-top: 11rem;
+}
+.carousel-inner img {
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fc7d7d;
+}
+
+/* Secțiuni */
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #343a40;
+  text-align: center;
+}
+/* Secțiune Despre noi */
+#despre-noi {
+  padding: 80px 20px; 
+  text-align: center;
+  border-radius: 15px; 
+  margin-bottom: 60px; 
+  background: linear-gradient(
+    to right,
+    #ffe1e1,
+    #ffd2d2,
+    #ffc3c3,
+    #ffb7b7,
+    #ff9d9d
+  );
+}
+
+#despre-noi h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #f67070;
+  margin-bottom: 30px;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+}
+
+#despre-noi p {
+  font-size: 1.2rem;
+  color: #666; 
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+}
+
+#despre-noi .btn {
+  background-color: #f0a500;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.125rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#despre-noi .btn:hover {
+  background-color: #e88c00;
+  transform: translateY(-5px);
+}
+
+#despre-noi .btn:active {
+  background-color: #d77b00; 
+  transform: translateY(0); 
+}
+
+#despre-noi .despre-noi-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+#despre-noi .despre-noi-content .text {
+  flex: 1;
+  max-width: 600px;
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#despre-noi .despre-noi-content .imagine {
+  flex: 1;
+  max-width: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#despre-noi .despre-noi-content .imagine img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #despre-noi .despre-noi-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #despre-noi .despre-noi-content .text {
+    max-width: 100%;
+    font-size: 1.1rem;
+  }
+
+  #despre-noi .despre-noi-content .imagine {
+    max-width: 100%;
+  }
+}
+
+/* Secțiunea Meniu */
+#meniu {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#meniu h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+#meniu p {
+  font-size: 1.25rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.meniu-categorie {
+  margin-bottom: 40px;
+}
+
+.meniu-categorie h3 {
+  font-size: 2rem;
+  color: #f0a500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.meniu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(252, 123, 111, 0.9);
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.meniu-item:hover {
+  transform: scale(1.05);
+}
+
+.meniu-item .item-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.meniu-item .item-img {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.meniu-item .item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.meniu-item h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.meniu-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.meniu-item .pret {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000000;
+  padding-left: 20px;
+}
+
+#meniu .btn {
+  background-color: #f0a500;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+#meniu .btn:hover {
+  background-color: #e88c00;
+}
+
+@media (max-width: 768px) {
+  .meniu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meniu-item .item-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .meniu-item .pret {
+    margin-top: 10px;
+  }
+}
+
+/* Secțiune Servicii */
+#servicii .card {
+  border: none;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+#servicii .card:hover {
+  transform: scale(1.05);
+}
+
+#servicii .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#servicii .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+#servicii .badge {
+  font-size: 0.85rem;
+}
+
+/* Secțiunea Atmosferă */
+#atmosfera {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+#atmosfera h2 {
+  font-size: 2.5rem;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+#atmosfera p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+/* Stilizare Carduri */
+#atmosfera .atmosfera-card {
+  background-color: rgba(250, 167, 115, 0.9); 
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.atmosfera-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.atmosfera-card img {
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.atmosfera-card .card-body {
+  padding: 20px;
+  text-align: left;
+}
+
+.atmosfera-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.atmosfera-card .card-text {
+  font-size: 1rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #atmosfera .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Footer */
+.custom-footer {
+  background-color: #d85d5d;
+}
+
+.custom-footer .btn {
+  background-color: #f0a500;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-footer .btn:hover {
+  background-color: #e88c00;
+}
+
+footer .d-flex {
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+
+  /* Carusel */
+  .carousel-inner img {
+    height: 50vh;
+  }
+
+  /* Carduri pentru servicii */
+  #servicii .card {
+    margin-bottom: 20px;
+  }
+}
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10 rem;
+  margin: auto;
+}
+
+.card {
+  background: rgba(252, 123, 111, 0.9);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  animation: fadeInUp 0.5s ease-in-out;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.card:hover {
+  background: rgba(100, 100, 150, 0.8);
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Layout pentru dispozitive mobile sau mici */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 80%;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Icons footer */
+.btn-outline-light {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #f67070;
+}
